@@ -1,0 +1,7 @@
+table tr td {
+    background-color: red;
+}
+
+table tbody tr {
+    background-color: blue;
+}

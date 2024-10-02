@@ -10,20 +10,20 @@
 -Nem választottuk ki,  hogy mit akarunk committelni. (Git add .)
 
 4. Módosítottam egy fájlt hozzáadtam egy commithoz, de amikor push parancsra azt írja ki, hogy "Everything up-to-date". Mit felejtettem el?
--Nem mentette elmenteni a munkáját, nem történt változás
+-Nem adtuk meg a git commmit -m "" parancsot
 
 5. Szeretnék lokálisan egy új branchet létrehozni az aktuális branchről. Milyen paranccsal tudom ezt megtenni?
 -Git checkout -b [New-Branch_Name]
 
 6. Megtetszett egy publikus repository githubon, szeretném átmásolni a saját accountomra, hogy jövőbeni módosításaimat fel tudjam pusholni. Mit kell tennem?
--Le kell clone-ozni a Git Clone "Repo url" paranccsal
+-Le kell forkolni
 
 7. Szeretnék visszalépni egy 2-vel ezelőtti commitomra. Milyen lépésekre és információkra van szükségem?
 -Git log -> Ezzel kilistázzuk az előző commitjeinket
--Git Checkout [Commit url](Az a hosszú sárga számsor) ->Ezzel visszalépünk a korábbi commitre
+-Git Checkout [Commit url](Az a hosszú sárga számsor és betűsor) ->Ezzel visszalépünk a korábbi commitre
 
 8. Módosítottam egy fájlt, de rossz branchen vagyok. Hogyan tudom egy új branchre commitolni a változtatásaimat?
--Git checkout [branch_name] -> Ezzel átállunk a kívánt branchre
+-Git checkout -b [branch_name] -> Ezzel átállunk a kívánt új branchre
 -Git add .
 -Git commit -m "commit message"
 
@@ -64,7 +64,7 @@ table tbody tr {
 }
 
 Milyen színű lesz a táblázat sorainak háttérszine?
--Kék
+-piros
 
 
 12. Az alábbi két css szabályom van:
@@ -89,7 +89,7 @@ table tbody tr td{
 }
 
 Milyen színű lesz a táblázat páros sorainak háttérszine?
--Blueviolet
+-piros
 
 14. Milyen css pseudo classal tudom megadni, hogy megváltozzon a css szabály ha egy elem fölé viszem az egeret?
 - :hover
@@ -191,23 +191,23 @@ personList = [{fname: "Laci", lname: "Kovács" }]
 -table.appendChild(tr);
 
 -const td_1 = document.createElement("td");
--td_1.appendChild(tr);
+-tr.appendChild(td_1);
 
 -const td_2 = document.createElement("td");
--td_2.appendChild(tr);
+-tr.appendChild(td_2);
 
 37. Létrehoztam már egy táblázatot js-ben és eltároltam egy table változóban. Hogyan tudok hozzáadni két sort és mindkét sorhoz egy-egy cellát (a tbody tag nem kötelező eleme a table-nek)?
 -const tr_1 = document.createElement('tr');
 -table.appendChild(tr_1);
 
 -const td_1 = document.createElement("td");
--td_1.appendChild(tr_1);
+-tr_1.appendChild(td_1);
 
 -const tr_2 = document.createElement('tr');
 -table.appendChild(tr_2);
 
 -const td_2 = document.createElement("td");
--td_2.appendChild(tr_2);
+-tr_2.appendChild(td_2);
 
 
 38. Mi a különbség az == és a === között?

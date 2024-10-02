@@ -1,0 +1,7 @@
+table tbody tr:nth-child(2n){
+    background-color: blueviolet;
+}
+
+tbody tr {
+    background-color: red;
+}
