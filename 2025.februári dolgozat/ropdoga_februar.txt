@@ -14,7 +14,9 @@
 for(const elem of array){
   console.log(elem);
 }
-
+Válasz:
+Hiba: Array is not defined
+__________________________________________________________________
 2. Mi a kimenete a következő programnak?
 const array = [{
 	nev: 'József',
@@ -31,7 +33,16 @@ const array = [{
 for(const elem of array){
   console.log(elem);
 }
+Válasz: 
+eletkor: 16
+nev: József
 
+eletkor: 16
+nev: Ferenc
+
+eletkor: 16
+nev: Mihály
+__________________________________________________________________
 3. Mi a kimenete a következő programnak?
 const array = [{
 	nev: 'József',
@@ -48,7 +59,9 @@ const array = [{
 for(const index of array){
   console.log(array[index]);
 }
-
+Válasz:
+Mind a három undefined
+__________________________________________________________________
 4. Mi a kimenete a következő programnak?
 const array = [{
 	nev: 'József',
@@ -65,7 +78,14 @@ const array = [{
 for(const elem of array){
   console.log(array);
 }
+Válasz:
+Háromszor kiírja, hogy 
+nev: József eletkor: 16
 
+nev: Ferenc eletkor: 16
+
+nev: Mihály eletkor: 16
+__________________________________________________________________
 5. Mi a kimenete a következő programnak?
 const array = [{
 	nev: 'József',
@@ -82,7 +102,16 @@ const array = [{
 for(const elem of array){
   console.log(elem);
 }
+Válasz: 
+eletkor: 16
+nev: József
 
+eletkor: 16
+nev: Ferenc
+
+eletkor: 16
+nev: Mihály
+__________________________________________________________________
 6. Mi a kimenet a következő programnak?
 const d = 4;
 function calculate(a,b){
@@ -90,6 +119,9 @@ function calculate(a,b){
 }
 console.log(calculate(1,3,2,7))
 
+Válasz: 
+8
+__________________________________________________________________
 7. Mi a kimenete a következő programnak?
 const a = {
 	eletkor: 18,
@@ -101,7 +133,9 @@ function kiir(person){
 }
 
 kiir(a);
-
+Válasz: 
+18
+__________________________________________________________________
 8. Mi a kimenete a következő programnak?
 const fv = (a,b) => {
    if(a.eletkor > b.eletkor){
@@ -116,7 +150,9 @@ const persList = [{
 	eletkor: 16,
 	name: 'Ferenc'
 }]
-
+Válasz:
+Nem történik semmi mert nincs semmi inicializálva vagy meghívva
+__________________________________________________________________
 9. Mi a kimenete a következő programnak?
 const fv = (a,b) => {
    if(a.eletkor > b.eletkor){
@@ -133,6 +169,9 @@ const persList = [{
 }]
 fv(persList, persList[1])
 
+Válasz:
+Nem történik semmi mert József életkora nem nagyobb mint Ferenccé
+__________________________________________________________________
 10. Mi a kimenete a következő programnak?
 const fv = (a,b) => {
    if(a.eletkor > b.eletkor){
@@ -148,7 +187,9 @@ const persList = [{
 	name: 'Ferenc'
 }]
 fv(persList[0], persList[1])
-
+Válasz:
+Nem történik semmi mert József életkora nem nagyobb mint Ferenccé
+__________________________________________________________________
 11. Mi a kimenete a következő programnak?
 const fv = (a,b, c) => {
    if(a.eletkor > b.eletkor){
@@ -165,7 +206,10 @@ const persList = [{
 }]
 fv(persList[0], undefined,persList[1])
 
-12Mi a kimenete a következő programnak?
+Válasz: 
+hiba! eletkor is not defined mert a c-nek adtuk a Ferenc értékeit
+__________________________________________________________________
+12. Mi a kimenete a következő programnak?
 const fv = (a,b, c) => {
    if(a.eletkor > b.eletkor){
      console.log(a.name)
@@ -180,7 +224,7 @@ const persList = [{
 	name: 'Ferenc'
 }]
 fv(persList[0], persList[1], undefined)
-
+__________________________________________________________________
 13. Mi a kimenete a következő programnak?
 const fv = (a) => {
    if(a.eletkor > b.eletkor){
@@ -196,7 +240,9 @@ const persList = [{
 	name: 'Ferenc'
 }]
 fv(persList[0], persList[1])
-
+Válasz:
+Nem történik semmi mert az fv függvénynek csak egy paramétere van
+__________________________________________________________________
 14. Mi a kimenete a következő programnak?
 
 const persList = [{
@@ -213,7 +259,9 @@ const fv = (a, b) => {
      console.log(a.name)
    }
 }
-
+Válasz:
+hiba! const-nál nem működik a hoisting
+__________________________________________________________________
 15. Mi a kimenetele a következő programnak?
 class Fruit {
 	#color;
@@ -225,6 +273,11 @@ class Fruit {
 const fr = new Fruit('red')
 console.log(fr.color)
 
+Válasz:
+hiba! color is not defined
+
+[Ezt nem teljesen értem miért!]
+__________________________________________________________________
 16. Mi a kimenetele a következő programnak?
 class Fruit {
 	#color;
@@ -240,7 +293,11 @@ class Fruit {
 
 const fr = new Fruit('red')
 console.log(fr.color)
+Válasz:
+hiba! color is not defined
 
+[Ezt nem teljesen értem miért!]
+__________________________________________________________________
 17. Mi a kimenetele a következő programnak?
 class Fruit {
 	#color;
@@ -257,6 +314,11 @@ class Fruit {
 const fr = new Fruit('red')
 console.log(fr.color)
 
+Válasz:
+hiba! color is not defined
+
+[Ezt nem teljesen értem miért!]
+__________________________________________________________________
 18. Mi a kimenetele a következő programnak?
 class Fruit {
 	#color;
@@ -273,6 +335,10 @@ class Fruit {
 const fr = new Fruit('red')
 console.log(fr.color)
 
+Válasz:
+hiba! Maximum call stack size exceeded 
+[Ezt nem teljesen értem miért!]
+__________________________________________________________________
 19. Mi a kimenetele a következő programnak?
 class Fruit {
 	#color;
@@ -288,7 +354,10 @@ class Fruit {
 
 const fr = new Fruit('red')
 console.log(fr.color)
-
+Válasz:
+hiba! color is not defined
+[Talán mert a konstruktorban nincs benne mint bemeneti paraméter?]
+__________________________________________________________________
 20. Mi a kimenetele a következő programnak?
 class Fruit {
 	#color;
@@ -304,7 +373,9 @@ class Fruit {
 
 const fr = new Fruit('red')
 console.log(fr.color)
-
+Válasz:
+red
+__________________________________________________________________
 21. Mi a kimenetele a következő programnak?
 class A {
 	
@@ -316,6 +387,9 @@ class A {
 const a = new A('red')
 console.log(a.get)
 
+Válasz:
+hiba! get is not defined
+__________________________________________________________________
 22. Mi a kimenetele a következő programnak?
 class A {
 	
@@ -327,6 +401,9 @@ class A {
 const a = new A('red')
 console.log(a.color)
 
+Válasz:
+hiba! get is not defined
+__________________________________________________________________
 23. Mi a kimenetele a következő programnak?
 class A {
 	
@@ -337,7 +414,9 @@ class A {
 
 const a = new A('red')
 console.log(a.color)
-
+Válasz:
+red 
+__________________________________________________________________
 24. Mi a kimenetele a következő programnak?
 class A {
 	
@@ -350,6 +429,9 @@ const a = new A('red')
 a.color='blue'
 console.log(a.color)
 
+Válasz:
+red mert itt a property nem writeable
+__________________________________________________________________
 25. Mi a kimenetele a következő programnak?
 class A {
 	
@@ -362,6 +444,9 @@ const a = new A('red')
 a.color='blue'
 console.log(a.color)
 
+Válasz:
+blue mert itt a property writeable
+__________________________________________________________________
 26. Mi a kimenetele a következő programnak?
 class A {
 	
@@ -374,6 +459,9 @@ const a = new A({color: 'red', depth: 2})
 a.config.color='blue'
 console.log(a.config.color)
 
+Válasz:
+hiba! color is not defined mert itt a "this" az a colorObj
+__________________________________________________________________
 27. Mi a kimenetele a következő programnak?
 class A {
 	
@@ -386,6 +474,9 @@ const a = new A({color: 'red', depth: 2})
 a.config.color='blue'
 console.log(a.config.color)
 
+Válasz:
+hiba! color is not defined mert itt a "this" az a colorObj
+__________________________________________________________________
 28. Mi a kimenetele a következő programnak?
 class A {
 	
@@ -398,7 +489,10 @@ const a = new A({color: 'red', depth: 2})
 a.config.color='blue'
 console.log(a.config.color)
 
-29 Mi a kimenetele a következő programnak?
+Válasz:
+hiba! color is not defined mert itt a "this" az a colorObj
+__________________________________________________________________
+29. Mi a kimenetele a következő programnak?
 function Person(firstName, lastName){
 	this.firstName = firstName
 	this.lastName = lastName
@@ -411,7 +505,10 @@ Person.prototype.title = function(){
 Person p = new Person('Kovács', 'László')
 console.log(p.title())
 
-30 Mi a kimenetele a következő programnak?
+Válasz:
+hiba! undexpected identifier 'p'
+__________________________________________________________________
+30. Mi a kimenetele a következő programnak?
 function Person(firstName, lastName){
 	this.firstName = firstName
 	this.lastName = lastName
@@ -424,7 +521,10 @@ Person.prototype.title = function(){
 Person p = new Person('Kovács', 'László')
 console.log(p.title())
 
-31 Mi a kimenetele a következő programnak?
+Válasz:
+hiba! undexpected identifier 'p'
+__________________________________________________________________
+31. Mi a kimenetele a következő programnak?
 class A {
     tul;
 
@@ -436,7 +536,10 @@ const a = new A('red');
 a.tul = 'green'
 console.log(a.tul)
 
-32 Mi a kimenetele a következő programnak?
+Válasz:
+green
+__________________________________________________________________
+32. Mi a kimenetele a következő programnak?
 class A {
     tul;
 
@@ -452,7 +555,10 @@ const a = new A('red');
 a.TUL= 'green'
 console.log(a.TUL)
 
-33 Mi a kimenetele a következő programnak?
+Válasz:
+red mert itt a getternek adtuk meg, hogy legyen zöld, de a tul változót hívjuk meg
+__________________________________________________________________
+33. Mi a kimenetele a következő programnak?
 class A {
     tul;
 
@@ -472,7 +578,10 @@ const a = new A('red');
 a.TUL= 'green'
 console.log(a.TUL)
 
-34 Mi a kimenetele a következő programnak?
+Válasz:
+green
+__________________________________________________________________
+34. Mi a kimenetele a következő programnak?
 class Person {
     #fname;
 
@@ -486,3 +595,7 @@ class Person {
 }
 const a = new Person('John');
 console.log(Person.fname)
+
+Válasz:
+undefined
+helyesen: console.log(a.fname);
