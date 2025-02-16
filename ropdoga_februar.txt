@@ -1,0 +1,488 @@
+1. Mi a kimenete a következő programnak?
+[{
+	nev: 'József',
+	eletkor: 16
+},
+{
+	nev: 'Ferenc',
+	eletkor: 16
+},
+{
+	nev: 'Mihály',
+	eletkor: 16
+}]
+for(const elem of array){
+  console.log(elem);
+}
+
+2. Mi a kimenete a következő programnak?
+const array = [{
+	nev: 'József',
+	eletkor: 16
+},
+{
+	nev: 'Ferenc',
+	eletkor: 16
+},
+{
+	nev: 'Mihály',
+	eletkor: 16
+}]
+for(const elem of array){
+  console.log(elem);
+}
+
+3. Mi a kimenete a következő programnak?
+const array = [{
+	nev: 'József',
+	eletkor: 16
+},
+{
+	nev: 'Ferenc',
+	eletkor: 16
+},
+{
+	nev: 'Mihály',
+	eletkor: 16
+}]
+for(const index of array){
+  console.log(array[index]);
+}
+
+4. Mi a kimenete a következő programnak?
+const array = [{
+	nev: 'József',
+	eletkor: 16
+},
+{
+	nev: 'Ferenc',
+	eletkor: 16
+},
+{
+	nev: 'Mihály',
+	eletkor: 16
+}]
+for(const elem of array){
+  console.log(array);
+}
+
+5. Mi a kimenete a következő programnak?
+const array = [{
+	nev: 'József',
+	eletkor: 16
+},
+{
+	nev: 'Ferenc',
+	eletkor: 16
+},
+{
+	nev: 'Mihály',
+	eletkor: 16
+}]
+for(const elem of array){
+  console.log(elem);
+}
+
+6. Mi a kimenet a következő programnak?
+const d = 4;
+function calculate(a,b){
+  return a+b+d
+}
+console.log(calculate(1,3,2,7))
+
+7. Mi a kimenete a következő programnak?
+const a = {
+	eletkor: 18,
+	nev: 'József'
+}
+
+function kiir(person){
+ console.log(person.eletkor)
+}
+
+kiir(a);
+
+8. Mi a kimenete a következő programnak?
+const fv = (a,b) => {
+   if(a.eletkor > b.eletkor){
+     console.log(a.name)
+   }
+}
+const persList = [{
+	eletkor: 16,
+	name: 'József'
+},
+{
+	eletkor: 16,
+	name: 'Ferenc'
+}]
+
+9. Mi a kimenete a következő programnak?
+const fv = (a,b) => {
+   if(a.eletkor > b.eletkor){
+     console.log(a.name)
+   }
+}
+const persList = [{
+	eletkor: 16,
+	name: 'József'
+},
+{
+	eletkor: 16,
+	name: 'Ferenc'
+}]
+fv(persList, persList[1])
+
+10. Mi a kimenete a következő programnak?
+const fv = (a,b) => {
+   if(a.eletkor > b.eletkor){
+     console.log(a.name)
+   }
+}
+const persList = [{
+	eletkor: 16,
+	name: 'József'
+},
+{
+	eletkor: 18,
+	name: 'Ferenc'
+}]
+fv(persList[0], persList[1])
+
+11. Mi a kimenete a következő programnak?
+const fv = (a,b, c) => {
+   if(a.eletkor > b.eletkor){
+     console.log(a.name)
+   }
+}
+const persList = [{
+	eletkor: 16,
+	name: 'József'
+},
+{
+	eletkor: 18,
+	name: 'ferenc'
+}]
+fv(persList[0], undefined,persList[1])
+
+12Mi a kimenete a következő programnak?
+const fv = (a,b, c) => {
+   if(a.eletkor > b.eletkor){
+     console.log(a.name)
+   }
+}
+const persList = [{
+	eletkor: 16,
+	name: 'József'
+},
+{
+	eletkor: 18,
+	name: 'Ferenc'
+}]
+fv(persList[0], persList[1], undefined)
+
+13. Mi a kimenete a következő programnak?
+const fv = (a) => {
+   if(a.eletkor > b.eletkor){
+     console.log(a.name)
+   }
+}
+const persList = [{
+	eletkor: 16,
+	name: 'József'
+},
+{
+	eletkor: 18,
+	name: 'Ferenc'
+}]
+fv(persList[0], persList[1])
+
+14. Mi a kimenete a következő programnak?
+
+const persList = [{
+	eletkor: 16,
+	name: 'József'
+},
+{
+	eletkor: 18,
+	name: 'Ferenc'
+}]
+fv(persList[0], persList[1])
+const fv = (a, b) => {
+   if(a.eletkor > b.eletkor){
+     console.log(a.name)
+   }
+}
+
+15. Mi a kimenetele a következő programnak?
+class Fruit {
+	#color;
+	constructor(){
+	  this.#color = color
+	}
+}
+
+const fr = new Fruit('red')
+console.log(fr.color)
+
+16. Mi a kimenetele a következő programnak?
+class Fruit {
+	#color;
+
+	get color(){
+		return this.color;
+	}
+
+	constructor(){
+	  this.#color = color
+	}
+}
+
+const fr = new Fruit('red')
+console.log(fr.color)
+
+17. Mi a kimenetele a következő programnak?
+class Fruit {
+	#color;
+
+	get color(){
+		return this.#color;
+	}
+
+	constructor(){
+	  this.#color = color
+	}
+}
+
+const fr = new Fruit('red')
+console.log(fr.color)
+
+18. Mi a kimenetele a következő programnak?
+class Fruit {
+	#color;
+
+	get color(){
+		return this.color;
+	}
+
+	constructor(color){
+	  this.#color = color
+	}
+}
+
+const fr = new Fruit('red')
+console.log(fr.color)
+
+19. Mi a kimenetele a következő programnak?
+class Fruit {
+	#color;
+
+	get color(){
+		return this.#color;
+	}
+
+	constructor(){
+	  this.#color = color
+	}
+}
+
+const fr = new Fruit('red')
+console.log(fr.color)
+
+20. Mi a kimenetele a következő programnak?
+class Fruit {
+	#color;
+
+	get color(){
+		return this.#color;
+	}
+
+	constructor(color){
+	  this.#color = color
+	}
+}
+
+const fr = new Fruit('red')
+console.log(fr.color)
+
+21. Mi a kimenetele a következő programnak?
+class A {
+	
+	constructor(color){
+	  Object.defineProperty('color', get, [])
+	}
+}
+
+const a = new A('red')
+console.log(a.get)
+
+22. Mi a kimenetele a következő programnak?
+class A {
+	
+	constructor(color){
+	  Object.defineProperty('color', get, [])
+	}
+}
+
+const a = new A('red')
+console.log(a.color)
+
+23. Mi a kimenetele a következő programnak?
+class A {
+	
+	constructor(color){
+	  Object.defineProperty(this, 'color', {value: color})
+	}
+}
+
+const a = new A('red')
+console.log(a.color)
+
+24. Mi a kimenetele a következő programnak?
+class A {
+	
+	constructor(color){
+	  Object.defineProperty(this, 'color', {value: color})
+	}
+}
+
+const a = new A('red')
+a.color='blue'
+console.log(a.color)
+
+25. Mi a kimenetele a következő programnak?
+class A {
+	
+	constructor(color){
+	  Object.defineProperty(this, 'color', {value: color, writable: true})
+	}
+}
+
+const a = new A('red')
+a.color='blue'
+console.log(a.color)
+
+26. Mi a kimenetele a következő programnak?
+class A {
+	
+	constructor(colorObj){
+	  Object.defineProperty(this, 'config', {value: color})
+	}
+}
+
+const a = new A({color: 'red', depth: 2})
+a.config.color='blue'
+console.log(a.config.color)
+
+27. Mi a kimenetele a következő programnak?
+class A {
+	
+	constructor(colorObj){
+	  Object.defineProperty(this, 'config', {value: color, writable: true})
+	}
+}
+
+const a = new A({color: 'red', depth: 2})
+a.config.color='blue'
+console.log(a.config.color)
+
+28. Mi a kimenetele a következő programnak?
+class A {
+	
+	constructor(colorObj){
+	  Object.defineProperty(this, 'config', {value: color, writable: true})
+	}
+}
+
+const a = new A({color: 'red', depth: 2})
+a.config.color='blue'
+console.log(a.config.color)
+
+29 Mi a kimenetele a következő programnak?
+function Person(firstName, lastName){
+	this.firstName = firstName
+	this.lastName = lastName
+}
+
+Person.prototype.title = function(){
+	return 'Dr';
+}
+
+Person p = new Person('Kovács', 'László')
+console.log(p.title())
+
+30 Mi a kimenetele a következő programnak?
+function Person(firstName, lastName){
+	this.firstName = firstName
+	this.lastName = lastName
+}
+
+Person.prototype.title = function(){
+	return "Dr " + this.firstName + " " + this.lastName;
+}
+
+Person p = new Person('Kovács', 'László')
+console.log(p.title())
+
+31 Mi a kimenetele a következő programnak?
+class A {
+    tul;
+
+    constructor(tul){
+      this.tul = tul 
+   }
+}
+const a = new A('red');
+a.tul = 'green'
+console.log(a.tul)
+
+32 Mi a kimenetele a következő programnak?
+class A {
+    tul;
+
+    get TUL(){
+      return this.tul;
+   }
+
+    constructor(tul){
+      this.tul = tul 
+   }
+}
+const a = new A('red');
+a.TUL= 'green'
+console.log(a.TUL)
+
+33 Mi a kimenetele a következő programnak?
+class A {
+    tul;
+
+    get TUL(){
+      return this.tul;
+   }
+
+    set TUL(value){
+       this.tul = value
+   }
+
+    constructor(tul){
+      this.tul = tul 
+   }
+}
+const a = new A('red');
+a.TUL= 'green'
+console.log(a.TUL)
+
+34 Mi a kimenetele a következő programnak?
+class Person {
+    #fname;
+
+    get fname(){
+      return this.#fname;
+   }
+
+    constructor(fname){
+      this.#fname = fname 
+   }
+}
+const a = new Person('John');
+console.log(Person.fname)
