@@ -277,7 +277,7 @@ const fr = new Fruit('red')
 console.log(fr.color)
 
 Válasz:
-hiba! color is not defined mert az osztálynak nincs color argumentuma
+hiba! color is not defined mert a konstruktorba nincs megadva paraméterként, azaz nincs definiálva a scopeon a color
 __________________________________________________________________
 16. Mi a kimenetele a következő programnak?
 class Fruit {
@@ -295,7 +295,7 @@ class Fruit {
 const fr = new Fruit('red')
 console.log(fr.color)
 Válasz:
-hiba! color is not defined mert a konstruktorba nincs megadva paraméterként
+hiba! color is not defined mert a konstruktorba nincs megadva paraméterként, azaz nincs definiálva a scopeon a color
 
 __________________________________________________________________
 17. Mi a kimenetele a következő programnak?
@@ -315,7 +315,7 @@ const fr = new Fruit('red')
 console.log(fr.color)
 
 Válasz:
-hiba! color is not defined mert a konstruktorba nincs megadva paraméterként
+hiba! color is not defined mert a konstruktorba nincs megadva paraméterként, azaz nincs definiálva a scopeon a color
 __________________________________________________________________
 18. Mi a kimenetele a következő programnak?
 class Fruit {
@@ -353,7 +353,7 @@ class Fruit {
 const fr = new Fruit('red')
 console.log(fr.color)
 Válasz:
-hiba! color is not defined mert a konstruktorban nincs benne mint bemeneti paraméter
+hiba! color is not defined mert a konstruktorban nincs benne mint bemeneti paraméter, azaz nincs definiálva a scopeon a color
 __________________________________________________________________
 20. Mi a kimenetele a következő programnak?
 class Fruit {
