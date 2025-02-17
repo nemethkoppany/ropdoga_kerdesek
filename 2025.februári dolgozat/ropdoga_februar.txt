@@ -224,6 +224,9 @@ const persList = [{
 	name: 'Ferenc'
 }]
 fv(persList[0], persList[1], undefined)
+
+Válasz:
+Nem történik semmi mert József nem idősebb Ferencnél
 __________________________________________________________________
 13. Mi a kimenete a következő programnak?
 const fv = (a) => {
@@ -274,9 +277,7 @@ const fr = new Fruit('red')
 console.log(fr.color)
 
 Válasz:
-hiba! color is not defined
-
-[Ezt nem teljesen értem miért!]
+hiba! color is not defined mert az osztálynak nincs color argumentuma
 __________________________________________________________________
 16. Mi a kimenetele a következő programnak?
 class Fruit {
@@ -294,9 +295,8 @@ class Fruit {
 const fr = new Fruit('red')
 console.log(fr.color)
 Válasz:
-hiba! color is not defined
+hiba! color is not defined mert a konstruktorba nincs megadva paraméterként
 
-[Ezt nem teljesen értem miért!]
 __________________________________________________________________
 17. Mi a kimenetele a következő programnak?
 class Fruit {
@@ -315,9 +315,7 @@ const fr = new Fruit('red')
 console.log(fr.color)
 
 Válasz:
-hiba! color is not defined
-
-[Ezt nem teljesen értem miért!]
+hiba! color is not defined mert a konstruktorba nincs megadva paraméterként
 __________________________________________________________________
 18. Mi a kimenetele a következő programnak?
 class Fruit {
@@ -337,7 +335,7 @@ console.log(fr.color)
 
 Válasz:
 hiba! Maximum call stack size exceeded 
-[Ezt nem teljesen értem miért!]
+Végtelen rekurzió mert a getteren belül hívjuk a gettert
 __________________________________________________________________
 19. Mi a kimenetele a következő programnak?
 class Fruit {
@@ -355,8 +353,7 @@ class Fruit {
 const fr = new Fruit('red')
 console.log(fr.color)
 Válasz:
-hiba! color is not defined
-[Talán mert a konstruktorban nincs benne mint bemeneti paraméter?]
+hiba! color is not defined mert a konstruktorban nincs benne mint bemeneti paraméter
 __________________________________________________________________
 20. Mi a kimenetele a következő programnak?
 class Fruit {
@@ -460,7 +457,7 @@ a.config.color='blue'
 console.log(a.config.color)
 
 Válasz:
-hiba! color is not defined mert itt a "this" az a colorObj
+hiba! color is not defined, helyesen: {value:colorObj}
 __________________________________________________________________
 27. Mi a kimenetele a következő programnak?
 class A {

@@ -1,13 +1,14 @@
-class Person {
-    #fname;
-
-    get fname(){
-      return this.#fname;
-   }
-
-    constructor(fname){
-      this.#fname = fname 
+const fv = (a,b, c) => {
+   if(a.eletkor > b.eletkor){
+     console.log(a.name)
    }
 }
-const a = new Person('John');
-console.log(Person.fname)
+const persList = [{
+	eletkor: 16,
+	name: 'József'
+},
+{
+	eletkor: 18,
+	name: 'Ferenc'
+}]
+fv(persList[0], persList[1], undefined)
