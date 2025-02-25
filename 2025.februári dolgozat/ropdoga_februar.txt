@@ -170,7 +170,7 @@ const persList = [{
 fv(persList, persList[1])
 
 Válasz:
-Nem történik semmi mert József életkora nem nagyobb mint Ferenccé
+Nem történik semmi mert undefined-ot hasonlítunk össze egy számmal
 __________________________________________________________________
 10. Mi a kimenete a következő programnak?
 const fv = (a,b) => {
