@@ -385,7 +385,7 @@ const a = new A('red')
 console.log(a.get)
 
 Válasz:
-hiba! get is not defined
+hiba! get is not defined, mert az Object.defineProperty-ban nincs megadva a get kulcsszó.
 __________________________________________________________________
 22. Mi a kimenetele a következő programnak?
 class A {
@@ -399,7 +399,7 @@ const a = new A('red')
 console.log(a.color)
 
 Válasz:
-hiba! get is not defined
+hiba! get is not defined, mivel ugyanaz a hiba, mint az előző kérdésnél.
 __________________________________________________________________
 23. Mi a kimenetele a következő programnak?
 class A {
@@ -457,7 +457,8 @@ a.config.color='blue'
 console.log(a.config.color)
 
 Válasz:
-hiba! color is not defined, helyesen: {value:colorObj}
+hiba! color is not defined, mert a konstruktorban a color változót nem a megfelelő módon használtuk.
+ helyesen: {value:colorObj}
 __________________________________________________________________
 27. Mi a kimenetele a következő programnak?
 class A {
@@ -472,7 +473,8 @@ a.config.color='blue'
 console.log(a.config.color)
 
 Válasz:
-hiba! color is not defined, helyesen: {value:colorObj}
+hiba! color is not defined, mivel a color nincs megfelelően definiálva az Object.defineProperty-ban, helyesen colorObj-ra kellene.
+ helyesen: {value:colorObj}
 __________________________________________________________________
 28. Mi a kimenetele a következő programnak?
 class A {
@@ -487,7 +489,8 @@ a.config.color='blue'
 console.log(a.config.color)
 
 Válasz:
-hiba! color is not defined, helyesen: {value:colorObj}
+hiba! color is not defined, mivel ugyanaz a hiba, mint az előzőekben.
+ helyesen: {value:colorObj}
 __________________________________________________________________
 29. Mi a kimenetele a következő programnak?
 function Person(firstName, lastName){
