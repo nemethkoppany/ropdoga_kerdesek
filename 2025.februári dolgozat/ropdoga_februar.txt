@@ -244,7 +244,7 @@ const persList = [{
 }]
 fv(persList[0], persList[1])
 Válasz:
-Nem történik semmi mert az fv függvénynek csak egy paramétere van
+b is not defined mert nincs megadva bemeneti paraméternek
 __________________________________________________________________
 14. Mi a kimenete a következő programnak?
 
@@ -472,7 +472,7 @@ a.config.color='blue'
 console.log(a.config.color)
 
 Válasz:
-hiba! color is not defined mert itt a "this" az a colorObj
+hiba! color is not defined, helyesen: {value:colorObj}
 __________________________________________________________________
 28. Mi a kimenetele a következő programnak?
 class A {
@@ -487,7 +487,7 @@ a.config.color='blue'
 console.log(a.config.color)
 
 Válasz:
-hiba! color is not defined mert itt a "this" az a colorObj
+hiba! color is not defined, helyesen: {value:colorObj}
 __________________________________________________________________
 29. Mi a kimenetele a következő programnak?
 function Person(firstName, lastName){
